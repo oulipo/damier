@@ -3,6 +3,7 @@
     $lignes = $_GET["lignes"] ?? 10;
 
     function ligne($n, $blancEnPremier = true) {
+        $ligne = "";
         for($i = 1; $i <= $n; $i++) {
             $ligne .= $blancEnPremier ? "⬜" : "⬛";
             $blancEnPremier = ! $blancEnPremier;
